@@ -8,11 +8,12 @@ html, body {
 
 div.container {
   width: 900px;
+  max-width: 90%;
   background-color: white;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 30px 20px; }
+  padding: 50px 40px; }
   div.container .subtitle {
     color: #CD5555;
     font-family: "Source Code Pro";
@@ -81,9 +82,51 @@ div.container {
         margin-left: 5px; }
   div.container div.projects div.project-left img {
     margin-right: 5px; }
-  div.container div.projects div.project-right {
-    text-align: right; }
-    div.container div.projects div.project-right img {
-      margin-left: 5px; }
+  div.container div.projects div.project-right img {
+    margin-left: 5px; }
+  div.container div.contact form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto; }
+    div.container div.contact form label {
+      display: block;
+      width: 100%; }
+    div.container div.contact form input {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #CDCDCD; }
+    div.container div.contact form textarea {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #CDCDCD; }
+
+@media (max-width: 899px) {
+  body {
+    text-align: center; }
+
+  ul {
+    padding: 0; }
+    ul li {
+      list-style-type: none; }
+
+  div.project-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    div.project-right img {
+      order: 1;
+      margin-bottom: 10px;
+      align-items: center; }
+    div.project-right div.content {
+      order: 2; } }
 
 /*# sourceMappingURL=style.css.map */
