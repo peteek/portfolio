@@ -45,6 +45,9 @@ div.container {
       div.container div.header div.text h3.email .fa, div.container div.header div.text h3.phone .fa, div.container div.header div.text h3.seperator .fa {
         font-size: 15px;
         margin-right: 1px; }
+      div.container div.header div.text h3.email a, div.container div.header div.text h3.phone a, div.container div.header div.text h3.seperator a {
+        text-decoration: none;
+        color: #6A6969; }
     div.container div.header div.text h3.seperator {
       font-weight: 700;
       font-size: 15px;
