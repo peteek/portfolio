@@ -78,7 +78,12 @@ div.container {
         border: 1px solid #D5D5D5;
         padding: 3px 25px;
         color: black;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: background, 150ms;
+        transition: color, 150ms; }
+        div.container div.projects div.project div.content .btn:hover {
+          background: #CD5555;
+          color: white; }
       div.container div.projects div.project div.content a.github-btn {
         margin-left: 5px; }
   div.container div.contact form {
@@ -115,7 +120,8 @@ div.container {
       color: white;
       font-family: Lato;
       font-weight: 700;
-      margin-top: 10px; }
+      margin-top: 10px;
+      cursor: pointer; }
 
 @media (max-width: 899px) {
   body {
