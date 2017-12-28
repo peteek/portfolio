@@ -12,8 +12,7 @@ html, body {
 	font-weight: 200;
 }
 
-
-
+// main container
 div.container {
 	width: 900px;
 	max-width: 90%;
@@ -193,6 +192,7 @@ div.container {
 	}
 }
 
+// for smaller screens
 @media (max-width: 899px) {
 	body {
 		text-align: center;
@@ -211,4 +211,9 @@ div.container {
 			list-style-type: none;
 		}
 	}
+}
+
+// copyright message
+div.copyright {
+	text-align: center;
 }
