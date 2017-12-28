@@ -128,5 +128,7 @@ div.container {
     padding: 0; }
     ul li {
       list-style-type: none; } }
+div.copyright {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
