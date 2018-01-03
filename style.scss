@@ -15,12 +15,14 @@ html, body {
 // main container
 div.container {
 	width: 900px;
-	max-width: 90%;
+	max-width: 75%;
 	background-color: white;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 50px 40px;
+	position: relative;
+	overflow: hidden;
 	
 	.subtitle {
 		color: $themeColor;
@@ -32,6 +34,23 @@ div.container {
 	
 	// Header img, title and contact info
 	div.header {
+		.cv {
+			text-decoration: none;
+			position: absolute;
+			right: -50px;
+			top: 45px;
+			background: $themeColor;
+			color: white;
+			padding: 5px 50px;
+			transform: rotate(45deg);
+			transition: background 150ms;
+
+			&:hover {
+				background: darken($themeColor, 3%);
+			}
+
+		}
+
 		img.thumbnail {
 			display: inline-block;
 			height: 110px;
@@ -206,7 +225,7 @@ div.container {
 }
 
 // for smaller screens
-@media (max-width: 899px) {
+@media (max-width: 900px) {
 	body {
 		text-align: center;
 	}
@@ -222,6 +241,26 @@ div.container {
 
 		li {
 			list-style-type: none;
+		}
+	}
+}
+
+// for phone screens
+@media (max-width: 550px) {
+	.header {
+		.text {
+			h3.seperator {
+				display: none;
+			}
+		}
+	}
+
+	.projects {
+		.project {
+			a.btn {
+				display: block;
+				margin: 5px;
+			}
 		}
 	}
 }

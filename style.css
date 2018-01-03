@@ -8,18 +8,32 @@ html, body {
 
 div.container {
   width: 900px;
-  max-width: 90%;
+  max-width: 75%;
   background-color: white;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 50px 40px; }
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden; }
   div.container .subtitle {
     color: #CD5555;
     font-family: "Source Code Pro";
     font-weight: 400;
     margin-top: 60px;
     font-size: 20px; }
+  div.container div.header .cv {
+    text-decoration: none;
+    position: absolute;
+    right: -50px;
+    top: 45px;
+    background: #CD5555;
+    color: white;
+    padding: 5px 50px;
+    transform: rotate(45deg);
+    transition: background 150ms; }
+    div.container div.header .cv:hover {
+      background: #ca4949; }
   div.container div.header img.thumbnail {
     display: inline-block;
     height: 110px;
@@ -126,7 +140,7 @@ div.container {
       margin-top: 10px;
       cursor: pointer; }
 
-@media (max-width: 899px) {
+@media (max-width: 900px) {
   body {
     text-align: center; }
 
@@ -137,6 +151,13 @@ div.container {
     padding: 0; }
     ul li {
       list-style-type: none; } }
+@media (max-width: 550px) {
+  .header .text h3.seperator {
+    display: none; }
+
+  .projects .project a.btn {
+    display: block;
+    margin: 5px; } }
 div.copyright {
   text-align: center; }
 
