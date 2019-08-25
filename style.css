@@ -4,7 +4,8 @@
 html, body {
   background-color: #EBEAEA;
   font-family: "Open Sans", sans-serif;
-  font-weight: 200; }
+  font-weight: 200;
+}
 
 div.container {
   width: 900px;
@@ -15,150 +16,231 @@ div.container {
   margin-bottom: 30px;
   padding: 50px 40px;
   position: relative;
-  overflow: hidden; }
-  div.container .subtitle {
-    color: #CD5555;
-    font-family: "Source Code Pro";
-    font-weight: 400;
-    margin-top: 60px;
-    font-size: 20px; }
-  div.container div.header .cv {
-    text-decoration: none;
-    position: absolute;
-    right: -50px;
-    top: 45px;
-    background: #CD5555;
-    color: white;
-    padding: 5px 50px;
-    transform: rotate(45deg);
-    transition: background 150ms; }
-    div.container div.header .cv:hover {
-      background: #ca4949; }
-  div.container div.header img.thumbnail {
-    display: inline-block;
-    height: 110px;
-    margin-right: 15px;
-    position: relative;
-    top: 10px; }
-  div.container div.header div.text {
-    display: inline-block; }
-    div.container div.header div.text h1.name {
-      font-size: 75px;
-      margin: 0;
-      font-family: Lato, sans-serif; }
-      div.container div.header div.text h1.name .first {
-        font-weight: 700;
-        color: #CD5555; }
-      div.container div.header div.text h1.name .last {
-        font-weight: 100; }
-    div.container div.header div.text h3.email, div.container div.header div.text h3.phone, div.container div.header div.text h3.seperator {
-      margin: 0;
-      display: inline-block;
-      font-weight: 300;
-      color: #6A6969; }
-      div.container div.header div.text h3.email .fa, div.container div.header div.text h3.phone .fa, div.container div.header div.text h3.seperator .fa {
-        font-size: 15px;
-        margin-right: 1px; }
-      div.container div.header div.text h3.email a, div.container div.header div.text h3.phone a, div.container div.header div.text h3.seperator a {
-        text-decoration: none;
-        color: #6A6969; }
-    div.container div.header div.text h3.seperator {
-      font-weight: 700;
-      font-size: 15px;
-      color: #2E2E2E;
-      margin: 0 10px; }
-  div.container div.about p.content {
-    line-height: 28px; }
-  div.container div.skills ul li {
-    line-height: 28px; }
-  div.container div.projects div.project {
-    margin-bottom: 50px; }
-    div.container div.projects div.project img {
-      height: 160px;
-      margin-right: 10px;
-      margin-top: 7px;
-      display: inline-block;
-      vertical-align: top; }
-    div.container div.projects div.project div.content {
-      display: inline-block;
-      width: 73%; }
-      div.container div.projects div.project div.content h2.project-title {
-        margin: 0;
-        font-family: "Open Sans";
-        font-weight: 400; }
-      div.container div.projects div.project div.content h3.project-technologies {
-        font-size: 15px;
-        font-weight: 300;
-        margin: 0; }
-      div.container div.projects div.project div.content .btn {
-        font-size: 13px;
-        border: 1px solid #D5D5D5;
-        padding: 5px 25px;
-        color: black;
-        text-decoration: none;
-        transition: background, 150ms;
-        transition: color, 150ms; }
-        div.container div.projects div.project div.content .btn:hover {
-          background: #CD5555;
-          color: white; }
-      div.container div.projects div.project div.content a.github-btn {
-        margin-left: 5px; }
-  div.container div.contact form {
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto; }
-    div.container div.contact form label {
-      display: block; }
-    div.container div.contact form input {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      min-width: 100%;
-      margin-bottom: 10px;
-      padding: 5px;
-      border-radius: 3px;
-      border: 1px solid #CDCDCD; }
-    div.container div.contact form textarea {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      min-width: 100%;
-      padding: 5px;
-      border-radius: 3px;
-      border: 1px solid #CDCDCD; }
-    div.container div.contact form input.contact-btn {
-      display: block;
-      width: 512px;
-      max-width: 103%;
-      min-width: 100%;
-      background: #CD5555;
-      border: none;
-      padding: 10px 5px;
-      color: white;
-      font-family: Lato;
-      font-weight: 700;
-      margin-top: 10px;
-      cursor: pointer; }
+  overflow: hidden;
+}
+
+div.container .subtitle {
+  color: #CD5555;
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+div.container div.header .cv {
+  text-decoration: none;
+  position: absolute;
+  right: -50px;
+  top: 45px;
+  background: #CD5555;
+  color: white;
+  padding: 5px 50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: background 150ms;
+  transition: background 150ms;
+}
+
+div.container div.header .cv:hover {
+  background: #ca4949;
+}
+
+div.container div.header img.thumbnail {
+  display: inline-block;
+  height: 110px;
+  margin-right: 15px;
+  position: relative;
+  top: 10px;
+}
+
+div.container div.header div.text {
+  display: inline-block;
+}
+
+div.container div.header div.text h1.name {
+  font-size: 75px;
+  margin: 0;
+  font-family: Lato, sans-serif;
+}
+
+div.container div.header div.text h1.name .first {
+  font-weight: 700;
+  color: #CD5555;
+}
+
+div.container div.header div.text h1.name .last {
+  font-weight: 100;
+}
+
+div.container div.header div.text h3.email, div.container div.header div.text h3.phone, div.container div.header div.text h3.seperator {
+  margin: 0;
+  display: inline-block;
+  font-weight: 300;
+  color: #6A6969;
+}
+
+div.container div.header div.text h3.email .fa, div.container div.header div.text h3.phone .fa, div.container div.header div.text h3.seperator .fa {
+  font-size: 15px;
+  margin-right: 1px;
+}
+
+div.container div.header div.text h3.email a, div.container div.header div.text h3.phone a, div.container div.header div.text h3.seperator a {
+  text-decoration: none;
+  color: #6A6969;
+}
+
+div.container div.header div.text h3.seperator {
+  font-weight: 700;
+  font-size: 15px;
+  color: #2E2E2E;
+  margin: 0 10px;
+}
+
+div.container div.about p.content {
+  line-height: 28px;
+}
+
+div.container div.skills ul li {
+  line-height: 28px;
+}
+
+div.container div.projects div.project {
+  margin-bottom: 50px;
+}
+
+div.container div.projects div.project img {
+  height: 160px;
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 7px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.container div.projects div.project div.content {
+  display: inline-block;
+  width: 73%;
+}
+
+div.container div.projects div.project div.content h2.project-title {
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+div.container div.projects div.project div.content h3.project-technologies {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+
+div.container div.projects div.project div.content .btn {
+  font-size: 13px;
+  border: 1px solid #D5D5D5;
+  padding: 5px 25px;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: background, 150ms;
+  transition: background, 150ms;
+  -webkit-transition: color, 150ms;
+  transition: color, 150ms;
+}
+
+div.container div.projects div.project div.content .btn:hover {
+  background: #CD5555;
+  color: white;
+}
+
+div.container div.projects div.project div.content a.website-btn.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: rgba(128, 128, 128, 0.2);
+  color: rgba(128, 128, 128, 0.8);
+}
+
+div.container div.projects div.project div.content a.github-btn {
+  margin-left: 5px;
+}
+
+div.container div.projects div.project div.content a.github-btn.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: rgba(128, 128, 128, 0.2);
+  color: rgba(128, 128, 128, 0.8);
+}
+
+div.container div.contact form {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+div.container div.contact form label {
+  display: block;
+}
+
+div.container div.contact form input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #CDCDCD;
+}
+
+div.container div.contact form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #CDCDCD;
+}
+
+div.container div.contact form input.contact-btn {
+  display: block;
+  width: 512px;
+  max-width: 103%;
+  min-width: 100%;
+  background: #CD5555;
+  border: none;
+  padding: 10px 5px;
+  color: white;
+  font-family: Lato;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
   body {
-    text-align: center; }
-
+    text-align: center;
+  }
   div.project img {
-    margin-right: 0px; }
-
+    margin-right: 0px;
+  }
   ul {
-    padding: 0; }
-    ul li {
-      list-style-type: none; } }
+    padding: 0;
+  }
+  ul li {
+    list-style-type: none;
+  }
+}
+
 @media (max-width: 550px) {
   .header .text h3.seperator {
-    display: none; }
-
+    display: none;
+  }
   .projects .project a.btn {
     display: block;
-    margin: 5px; } }
-div.copyright {
-  text-align: center; }
+    margin: 5px;
+  }
+}
 
+div.copyright {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

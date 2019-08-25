@@ -123,6 +123,7 @@ div.container {
 
 			img {
 				height: 160px;
+				width: 200px;
 				margin-right: 10px;
 				margin-top: 7px;
 				display: inline-block;
@@ -164,11 +165,24 @@ div.container {
 				}
 
 				a.website-btn {
-					
+					&.disabled {
+						pointer-events: none;
+						cursor: default;
+						background: rgba(grey, 0.2);
+						color: rgba(grey, 0.8)
+					}
 				}
 
 				a.github-btn {
 					margin-left: 5px;
+
+					&.disabled {
+						pointer-events: none;
+						cursor: default;
+						background: rgba(grey, 0.2);
+						color: rgba(grey, 0.8)
+					}
+
 				}
 			}
 		}
